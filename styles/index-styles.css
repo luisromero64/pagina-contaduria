@@ -1,0 +1,748 @@
+:root{
+   --secondary-color: #D9430D;
+   --blue-primary: #162846;
+   --gray-color: #F2F2F2;
+   }
+   *{
+    padding: 0%;
+    margin: 0%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 100%;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+   }
+   #navegacion-lista{
+      display: flex;
+      height: 10%;
+      width: 100%;
+      background-color: white;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      font-family: monospace;   
+      position: fixed;
+      border-bottom: 1px solid lightgray;
+      z-index: 10;
+   }
+   a{
+      text-decoration: none;
+      color: var(--blue-primary);
+   }
+   a:hover{
+      text-decoration: none;
+   }
+   a:active{
+      text-decoration: none;
+   }
+   #contacto-boton-link{
+      color: white;
+   }
+   #Imagen-icono{
+      height: 50px;
+      padding-top: 5%;
+      padding-bottom: 5%;
+   }
+   .navegacion-lista-elemento{
+      font-size: 17px;
+      text-decoration: none;
+      margin-right: 10%;
+      display: inline-block;
+      background: none;
+      color:  #162846;
+      position: relative;
+   
+   }
+   .navegacion-lista-elemento::after{
+      content: "";
+      background-color: var(--secondary-color);
+      position: absolute;
+      left: 0%;
+      top: 100%;
+      width: 100%;
+      height: 3px;
+   
+      opacity: 0;
+      transition: opacity 0.5s;
+   
+   }
+   .navegacion-lista-elemento:hover::after{
+      opacity: 0.8;
+   }
+   #contacto-boton-nav{
+     background-color: #162846;
+     color: white;
+     width: 7%;
+     height: 70%;
+     border-radius: 2%;
+     
+   }
+   .navegacion-link{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   a{
+      background: none;
+   }
+   
+   #contacto-boton-nav::after{
+      height: 0%;
+   
+   }
+   #contacto-boton-nav:hover{
+      background-color: var(--secondary-color);
+   
+   
+   }
+   
+   #inicio{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+      height: 100%;
+      background-image: url("../pexels-kampus-production-8439656.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      object-fit: contain;
+      min-width: 425px;
+      
+   }
+   #titulo{
+      background-color: none;
+      font-size: 35px;
+      text-align: center;
+      color: white;
+      display: inline-block;
+      margin: 20%;
+      text-align: center; 
+      background: none; 
+      position:relative;
+      text-shadow: 1px 1px 2px black;
+       
+   }
+   #Contacto-boton{
+      
+      position:relative;
+      top: -20%;
+      padding: 20px;
+      background-color: var(--blue-primary);
+      border: none;
+      color: white;
+   }
+   #Contacto-boton:hover{
+      background-color: var(--secondary-color);
+      color: white;
+   }
+   
+   
+   #quienes-somos{
+      margin-top: 0%;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction : row ;
+      min-width: 425px;
+      
+   }
+   #Container-content{
+      background-color: var(--blue-primary);
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+      
+      overflow: hidden;
+   }
+   
+   #container-img{
+    width: 100%;
+    background-color: var(--secondary-color);
+    height: 500px;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   #Imagen-quien-soy{
+      width: 100%;
+      height: 500px;
+      opacity: 0.6;
+   }
+   
+   
+   .titulo{
+      margin-top: 10%;
+      background-color:var(--blue-primary) ;
+      color: var(--secondary-color);
+      font-size: 40px;
+      font-weight: 100;
+      align-items: flex-start;
+      position: relative;
+      letter-spacing: 10px;
+      background: none;
+   }
+   .titulo::after{
+      content: "";
+      background-color: var(--secondary-color);
+      position: absolute;
+      left: 0%;
+      top: 100%;
+      width: 100%;
+      height: 3px;
+   }
+   #quien-soy-texto{
+      font-size: 20px;
+      background-color: var(--blue-primary);
+      padding:20px;
+      color: white;
+      line-height:50px;
+   
+   }
+   #boton-quien-soy{
+      font-size: 15px;
+       border: none;
+       padding: 20px;
+       padding-left: 30px;
+       padding-right: 30px;
+       background-color: var(--secondary-color);
+       color: white;
+       margin-bottom: 10%;
+       text-align: center;
+   
+   }
+   #boton-quien-soy:hover{
+      background-color: var(--secondary-color);
+      box-shadow: 1px ;
+      transform: scale(1.1);
+      zoom: 100%;
+   }
+   
+   #servicios{
+      min-width: 425px;
+      width: 100%;
+      height: 80vh;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      text-align: center;
+      align-items: center;
+      background-image: url("https://images.pexels.com/photos/7693097/pexels-photo-7693097.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+   }
+   #servicios-container{
+      display: flex;
+      height: 80vh;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: #162846;
+      object-fit: cover;
+      opacity: 0.7;
+   
+   }
+   
+   .servicios{
+      font-size: 20px;
+      text-align: center;
+      color: white;
+      display: inline-block;
+      text-align: center; 
+      background: none; 
+      position:relative;
+   }
+   
+   #experiencia-titulo{
+      min-width: 425px;
+      margin:0;
+      height: 4vh;
+      text-align: center;
+      color: var(--secondary-color);
+      padding: 2%;
+      background-color: var(--blue-primary);
+   }
+   #experiencia-titulo::after{
+      margin-left: 35%;
+      height: 1%;
+     width: 30%;
+   }
+   #experiencia{
+      height: 80vh;
+      min-width: 425px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      line-height: 25px;
+      justify-content: space-evenly;
+      justify-items: baseline;
+      align-items: center;
+      background-color: var(--blue-primary);
+   }
+   .experiencia-div{
+      height: 70%;
+      width: 20%;
+      color: black;
+      padding-top: 3%;
+      text-align: center;
+      justify-content: center;
+      background-color: lightgray;
+      
+   }
+   .Experiencia-titulo{
+      font-size: 20px;
+      color: var(--secondary-color);
+   }
+   #pie-pagina{
+      display: flex;
+      width: 100%;
+      height: 20vh;
+      background-color: white;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+   }
+   .contacto{
+      margin-top: 5%;
+      padding-bottom: 5px;
+   }
+   .texto-pie-pagina{
+      background-color: white;
+      border-style: none;
+      padding-bottom: 5px;
+   }
+   .contacto-informacion{
+      text-align: center;
+      border-style: none;
+      padding: 2px;
+   }
+   title{
+      width: 0;
+      height: 0;
+   }
+   
+   @media (max-width: 992px) {
+      #navegacion-lista{
+         flex-direction: column;
+         height: 30%;
+         justify-content: space-around;
+         align-items: center;
+         text-align: center;
+         position: fixed;
+      }
+   
+      .navegacion-lista-elemento{
+         align-items: center;
+         justify-content: space-around;
+         display: flex;
+         background-color: white;
+         width: 100%;
+         height: 25%;
+         padding: 0px;
+         margin: 0px;
+         position: relative;
+      }
+      .navegacion-lista-elemento:hover{
+         background-color: rgb(228, 228, 228);
+         color: white ; 
+      }
+      #contacto-boton-nav{
+         background-color: var(--blue-primary);
+         color: var(--blue-primary);
+         padding: 0%;
+         border-radius: 0%;
+         margin: 0%;
+      }
+      #contacto-boton-nav:hover{
+         background-color: var(--secondary-color);
+         color: white;
+         
+      }
+      #inicio{
+         justify-content: flex-end;
+         align-items: center;
+      }
+      #titulo{
+         margin-top: 40%;
+         font-size: 20px;
+         text-align: center;
+      }
+      #Contacto-boton{
+         margin-top: 10%;
+      }
+      #Imagen-icono{
+         margin-top: 2%;
+      }
+      #quienes-somos{
+         margin-top: 0%;
+         padding: 0%;
+         flex-direction: column;
+         justify-content: center;
+         height: 100%;
+         width: 100%;
+   
+   
+      }
+      #Container-content{
+         height: 100%;
+      }
+      #container-img{
+         height: 40%;
+      }
+      #Imagen-quien-soy{
+         height: 100%;
+      }
+   
+      #servicios{
+         height: 90vh;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr;
+          padding-top: 0%;
+          align-items: flex-start;
+      }
+      #servicios-container{
+         height: 88vh;
+         background-color: #162846;
+         
+      }
+      
+      #experiencia-titulo{
+         background-color: var(--blue-primary);
+         padding: 0%;
+         width: 100%;
+         height: 1em;
+         border-style: none ;
+         
+         
+      }
+      #experiencia-titulo::after{
+         margin-left: 10%;
+         margin-right: 0%;
+         width: 75%;
+      }
+   
+      #experiencia{
+         height: 200vh;
+         flex-direction: column;
+         justify-content: space-evenly;
+         width: 100%;
+      }
+      .experiencia-div{
+         width: 60%;
+         height: 25%;
+         
+      }
+      #pie-pagina{
+         width: 100%;
+         height: 100%;
+         flex-direction: column;
+         align-items: flex-start;
+         justify-content: space-around;
+         border-left-style: none;
+      }
+
+   
+      
+   }
+   
+   @media (max-width: 576px)  {
+      #navegacion-lista{
+         position: relative;
+         flex-direction: column;
+         height: 50vh;
+         justify-content: space-between;
+         align-items: center;
+         text-align: center;
+      }
+   
+      .navegacion-lista-elemento{
+         align-items: center;
+         justify-content: space-around;
+         display: flex;
+         background-color: white;
+         width: 100%;
+         height: 25%;
+         padding: 0px;
+         margin: 0px;
+         position: relative;
+      }
+      #imagen-menu{
+          width:20px;
+          height: 20px;
+         padding-top: 3%;
+         padding-bottom: 3%;
+         background-color: white;
+      }
+      
+      #imagen-menu:target{
+         background-color: white;
+      }
+      .navegacion-lista-elemento:hover{
+         background-color: rgb(228, 228, 228);
+         color: white;
+      }
+      #contacto-boton-nav{
+         width: 100%;
+         height: 20%;
+
+         background-color: var(--blue-primary);
+         color: var(--blue-primary);
+         padding: 0%;
+         border-radius: 0%;
+         margin: 0%;
+      }
+      #contacto-boton-nav:hover{
+         background-color: #D9430D;
+         color: white;
+         
+      }
+      #inicio{
+         justify-content: flex-end;
+         align-items: center;
+      }
+      #titulo{
+         margin-top: 40%;
+         font-size: 20px;
+         text-align: center;
+      }
+      #Contacto-boton{
+         margin-top: 10%;
+      }
+      #quienes-somos{
+         margin-top: 0%;
+         padding: 0%;
+         flex-direction: column;
+         justify-content: center;
+         height: 100%;
+         width: 100%;
+   
+   
+      }
+      #Container-content{
+         height: 100%;
+      }
+      #container-img{
+         height: 40%;
+      }
+      #Imagen-quien-soy{
+         height: 100%;
+      }
+   
+      #servicios{
+         height: 90vh;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr;
+          padding-top: 0%;
+          align-items: flex-start;
+      }
+      #servicios-container{
+         height: 88vh;
+         background-color: #162846;
+         
+      }
+      
+      #experiencia-titulo{
+         background-color: var(--blue-primary);
+         padding: 0%;
+         width: 100%;
+         height: 1em;
+         border-style: none ;
+         
+         
+      }
+      #experiencia-titulo::after{
+         margin-left: 10%;
+         margin-right: 0%;
+         width: 75%;
+      }
+   
+      #experiencia{
+         height: 200vh;
+         flex-direction: column;
+         justify-content: space-evenly;
+         width: 100%;
+      }
+      .experiencia-div{
+         width: 60%;
+         height: 25%;
+         
+      }
+      #pie-pagina{
+         width: 100%;
+         height: 100%;
+         flex-direction: column;
+         align-items: flex-start;
+         justify-content: space-around;
+         border-left-style: none;
+      }
+   
+   
+      
+   }
+   
+   @media (max-width: 1250px)  {
+      
+      #navegacion-lista{
+         min-width: 425px;
+         margin: 0%;
+         padding: 0%;
+         flex-direction: column;
+         height: 60vh;
+         width: 100%;
+         justify-content: space-around;
+         align-items: center;
+         text-align: center;
+         position: relative;
+      }
+   
+      .navegacion-lista-elemento{
+         align-items: center;
+         justify-content: space-around;
+         display: flex;
+         background-color: white;
+         width: 100%;
+         height: 25%;
+         padding: 0px;
+         margin: 0px;
+         position: relative;
+      }
+      #imagen-menu{
+         padding-top: 3%;
+         padding-bottom: 3%;
+         background-color: white;
+      }
+      #imagen-menu:target{
+         background-color: white;
+      }
+      .navegacion-lista-elemento:hover{
+         background-color: rgb(228, 228, 228);
+         color: white;
+      }
+      #contacto-boton-nav{
+         background-color: var(--blue-primary);
+         color: var(--blue-primary);
+         width: 100%;
+         height: 20%;
+         padding: 0%;
+         border-radius: 0%;
+         margin: 0%;
+      }
+      #contacto-boton-nav:hover{
+         background-color: #D9430D;
+         color: white;
+         
+      }
+      #inicio{
+         justify-content: flex-end;
+         align-items: center;
+      }
+      #titulo{
+
+         font-size: 20px;
+         text-align: center;
+      }
+      #Contacto-boton{
+         margin-top: 10%;
+      }
+      #quienes-somos{
+         flex-direction: column;
+         justify-content: center;
+         height: 100%;
+         width: 100%;
+   
+      }
+      #container-img{
+         height: 50%;
+      }
+      #Imagen-quien-soy{
+         height: 100%;
+      }
+   
+      #servicios{
+         height: 90vh;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr;
+          padding-top: 0%;
+          align-items: flex-start;
+      }
+      #servicios-container{
+         height: 88vh;
+         background-color: #162846;
+         
+      }
+      
+      #experiencia-titulo{
+         background-color: var(--blue-primary);
+         padding: 0%;
+         width: 100%;
+         height: 1em;
+         border-style: none ;
+         
+         
+      }
+      #experiencia-titulo::after{
+         margin-left: 10%;
+         margin-right: 0%;
+         width: 75%;
+      }
+   
+      #experiencia{
+         height: 200vh;
+         flex-direction: column;
+         justify-content: space-evenly;
+         width: 100%;
+      }
+      .experiencia-div{
+         width: 60%;
+         height: 25%;
+         
+      }
+      #pie-pagina{
+         width: 100%;
+         height: 100%;
+         flex-direction: column;
+         align-items: flex-start;
+         justify-content: space-around;
+         border-left-style: none;
+      }
+   }
+   @media (max-width: 1250px) and (min-width: 992px){
+      #contacto-boton-nav{
+         width: 100%;
+         height: 20%;}
+      #experiencia-titulo{
+         background-color: var(--blue-primary);
+         padding: 0%;
+         width: 100%;
+         height: 1em;
+         border-style: none ;
+         font-size: 55px;
+         
+         
+      }
+      #experiencia-titulo::after{
+         margin-left: 10%;
+         margin-right: 0%;
+         width: 75%;
+      }
+   
+      #experiencia{
+         height: 200vh;
+         flex-direction: column;
+         justify-content: space-evenly;
+         width: 100%;
+         font-size: 20px;
+      }
+      .experiencia-div{
+         font-size: 30px;
+         width: 60%;
+         height: 25%;
+         
+      }
+      .Experiencia-titulo{
+         padding: 40px;
+         font-size: 40px;
+      }
+   }

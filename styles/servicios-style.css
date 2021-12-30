@@ -1,0 +1,360 @@
+:root{
+    --secondary-color: #D9430D;
+    --blue-primary: #162846;
+    --gray-color: #F2F2F2;
+    --orange: rgb(255, 196, 0); 
+    --green: #55a288;
+    }
+
+*{
+    padding: 0%;
+    margin: 0%;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+#navegacion-lista{
+    display: flex;
+    height: 10%;
+    width: 100%;
+    background-color: white;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: monospace;   
+    position: fixed;
+    border-bottom: 1px solid lightgray;
+    z-index: 10;
+ }
+ a{
+    text-decoration: none;
+    color: var(--blue-primary);
+ }
+ a:hover{
+    text-decoration: none;
+ }
+ a:active{
+    text-decoration: none;
+ }
+ #contacto-boton-link{
+    color: white;
+ }
+ #Imagen-icono{
+    height: 50px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+ }
+ .navegacion-lista-elemento{
+    font-size: 17px;
+    text-decoration: none;
+    margin-right: 10%;
+    display: inline-block;
+    background: none;
+    color:  #162846;
+    position: relative;
+ 
+ }
+ .navegacion-lista-elemento::after{
+    content: "";
+    background-color: var(--secondary-color);
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    width: 100%;
+    height: 3px;
+ 
+    opacity: 0;
+    transition: opacity 0.5s;
+ 
+ }
+ .navegacion-lista-elemento:hover::after{
+    opacity: 0.8;
+ }
+ #contacto-boton-nav{
+   background-color: #162846;
+   color: white;
+   width: 8%;
+   height: 70%;
+   border-radius: 2%;
+   
+ }
+ .navegacion-link{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ a{
+    background: none;
+ }
+ 
+ #contacto-boton-nav::after{
+    height: 0%;
+ 
+ }
+ #contacto-boton-nav:hover{
+    background-color: var(--secondary-color);
+ 
+ 
+ }
+ 
+#icono-1{
+    color: var(--secondary-color);
+
+}
+#icono-2{
+    color: var(--secondary-color);
+
+}
+#icono-3{
+    color: var(--secondary-color);
+
+}
+#icono-4{
+    color: var(--secondary-color);
+
+}
+#icono-5{
+    color: var(--secondary-color);
+
+}
+#icono-6{
+    color: var(--secondary-color);
+
+}
+#container{
+    padding-top: 10%;
+     min-width: 500px;
+     min-height: 800px;
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     gap: 5%;
+     align-items: center;
+     background-image: url("Img/test\ img\ 10.jpg");
+ }
+ #titulo-container{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+ }
+#titulo{
+    font-weight: bold;
+    margin-top: 10%; 
+    color: var(--blue-primary);
+    font-size: 45px;
+    position: relative;
+    letter-spacing: 10px;
+    -webkit-text-stroke: 2px white;
+ }
+#titulo::after{
+    content: "";
+    background-color: white;
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    width: 100%;
+    height: 3px;
+    
+ }
+ #servicios-container{
+     min-width: 425px;
+     min-height: 520px;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: 1fr 1fr;
+     background-color: var(--gray-color);
+     width: 80%;
+     height: 100%;
+     gap: 0%;
+     margin-bottom: 2%;
+     border-radius: 10px;
+     box-shadow: 1px 1px 10px rgb(145, 145, 145);
+     
+ }
+
+ .servicio{
+     background-color: none;
+     height: 100%;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-evenly;
+ }
+ .servicio:hover{
+     background-color: white;
+     box-shadow: 1px 1px 10px rgb(145, 145, 145);
+     border-radius: 10px;
+ }
+ 
+  .texto-servicio{
+      margin-left: 5%;
+  }
+
+
+
+ #pie-pagina{
+    min-width: 500px;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: var(--blue-primary);
+    align-items: center;
+ }
+ #informacion-contacto{
+     color: white;
+    
+     display: inline-block;
+     padding: 2%;
+ }
+ #redes-sociales{
+     color: white;
+     display: inline-block;
+     padding: 2%;
+ }
+
+ @media (max-width: 1024px)  {
+    *{
+        padding: 0%;
+        margin: 0%;
+        font-size: 20px;
+        font-family: 'Lato', sans-serif;
+    }
+    #navegacion-lista{
+        min-width: 500px;
+        position: relative;
+        flex-direction: column;
+        height: 60vh;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+     }
+  
+     .navegacion-lista-elemento{
+        align-items: center;
+        justify-content: space-around;
+        display: flex;
+        background-color: white;
+        width: 100%;
+        height: 25%;
+        padding: 0px;
+        margin: 0px;
+        position: relative;
+     }
+     #imagen-menu{
+         width:20px;
+         height: 20px;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        background-color: white;
+     }
+     
+     #imagen-menu:target{
+        background-color: white;
+     }
+     .navegacion-lista-elemento:hover{
+        background-color: rgb(228, 228, 228);
+        color: white;
+     }
+     #contacto-boton-nav{
+         width: 100%;
+         height: 20%;
+        background-color: var(--blue-primary);
+        color: var(--blue-primary);
+        border-radius: 0%;
+        margin: 0%;
+     }
+     #contacto-boton-nav:hover{
+        background-color: #D9430D;
+        color: white;
+        
+     }
+     .navegacion-link{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+        width: 100%;
+        height: 100%;
+     }
+   
+    #container{
+        gap: 5%;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0%;
+        margin: 0%;
+        height: 190vh;
+    }
+    #servicios-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        border-radius: 0%;
+        padding: 0%;
+        margin: 0%;
+        align-items: center;
+        justify-content: space-between;
+        background-color: none;
+        
+    }
+    .servicio{
+        padding-top: 5%;
+        background-color: none;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    #servicio-2{
+        background-color:  rgb(231, 227, 227);
+    }
+    #servicio-4{
+        background-color:  rgb(231, 227, 227);
+    }
+    #servicio-6{
+        background-color: rgb(231, 227, 227);
+    }
+
+
+    #titulo{
+        color: white;
+        -webkit-text-stroke: 2px white;
+
+    }
+    #titulo::after{
+        background-color: white;
+    }
+    .servicio:hover{
+        background-color: white;
+        box-shadow: 1px 1px 10px rgb(145, 145, 145);
+        border-radius: 0%;
+    }
+
+
+    #pie-pagina{
+        width: 100%;
+        height: 10%;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+     }
+
+
+
+
+
+
+
+
+
+
+}
